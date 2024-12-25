@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Investment Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+        }
+        .investment-plans, .testimonials {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .plan, .testimonial {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .plan, .testimonial {
+                width: 30%;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .plan, .testimonial {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .plan, .testimonial {
+                width: 100%;
+            }
+            nav {
+                text-align: left;
+                padding: 10px 20px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            form button {
+                padding: 10px 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Investment Opportunities</h1>
+        <p>Secure your future by making smart investments today</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#plans">Investment Plans</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to the Future of Investments</h2>
+        <p>We offer a variety of investment plans to help you grow your wealth, whether you're a first-time investor or a seasoned professional.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a trusted platform that connects investors with lucrative opportunities in various sectors, ensuring high returns and security.</p>
+    </section>
+
+    <!-- Investment Plans Section -->
+    <section id="plans">
+        <h2>Investment Plans</h2>
+        <div class="investment-plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Invest $500 and earn 5% return monthly</p>
+            </div>
+            <div class="plan">
+                <h3>Advanced Plan</h3>
+                <p>Invest $1,000 and earn 10% return monthly</p>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>Invest $5,000 and earn 15% return monthly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"This platform has been a game changer for my financial growth. The returns are fantastic!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"Highly reliable and trustworthy. I highly recommend their investment plans!"</p>
+                <p>- Jane Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Investment Opportunities. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
